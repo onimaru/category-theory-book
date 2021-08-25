@@ -72,7 +72,8 @@ Já para o caso da multiplicação $ab = a \cdot b$, temos $f(a \cdot b) = (a \c
 
 (a) Sejam os mapas $g: A \rightarrow B$ e $h: A \rightarrow B$. Prove que se $f$ é injetiva e $f \circ g = f \circ h$, então $g = h$.
 
-(b) Suponha que $A$ possui pelo menos um elemento ($A \neq \empty$) e, para todos os mapas $g$ e $h$ de $A$ para $B$, se $f \circ g = f \circ h$, então $g = h$. Mostre que $f$ é injetiva.
+(b) Suponha que $A$ possui pelo menos um elemento ($A \neq \emptyset$) e, para todos os mapas $g$ e $h$ de $A$ para $B$, se $f \circ g = f \circ h$, então $g = h$. Mostre que $f$ é injetiva.
+
 <br/>
 
 9 - Sejam $A$, $B$ e $C$ conjuntos e o mapa $f: A \rightarrow B$.
@@ -80,9 +81,10 @@ Já para o caso da multiplicação $ab = a \cdot b$, temos $f(a \cdot b) = (a \c
 (a) Sejam os mapas $g: B \rightarrow C$ e $h: B \rightarrow C$. Prove que se $f$ é sobrejetiva e $g \circ f = h \circ f$, então $g = h$.
 
 (b) Suponha que $C$ possui pelo menos dois elementos e, para todos os mapas $g$ e $h$ de $B$ para $C$, se $g \circ f = h \circ f$, então $g = h$. Mostre que $f$ é sobrejetiva.
+
 <br/>
 
-### Exercícios 10 e 11 são uma "generalização" para "hom functions" dos exercícios 8 e 9, respectivamente. 
+**Exercícios 10 e 11 são uma "generalização" para "hom functions" dos exercícios 8 e 9, respectivamente.** 
 
 Seja $Hom(S,T)$ o conjunto de todas as funções com domínio $S$ e codomínio $T$.
 
@@ -96,6 +98,8 @@ Mostre que se $S$ possui pelo menos um elemento, então $f$ é injetiva se e som
 ```{dropdown} **Solução**: 
 Ver Category Theory for Computing Science (Barr e Wells), exemplo após a definição **1.2.13**
 ```
+<br/>
+
 
 11 - Sejam $W$, $S$ e $T$ conjuntos e o mapa $h: W \rightarrow S$. Defina o mapa:
 

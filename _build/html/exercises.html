@@ -315,6 +315,40 @@ O mapa <span class="math notranslate nohighlight">\((R,a): x \mapsto Rx + a\)</s
 Já para o caso da multiplicação <span class="math notranslate nohighlight">\(ab = a \cdot b\)</span>, temos <span class="math notranslate nohighlight">\(f(a \cdot b) = (a \cdot b)^{2} = a^{2} \cdot b^{2} = f(a)\cdot f(b)\)</span>, preservando a multiplicação e sendo assim um homomorfismo. Entretanto <span class="math notranslate nohighlight">\(f\)</span> não é um isomorfismo, já que não é bijetivo.</p>
 </div>
 </details><br/>
+<p>7 -  Sejam os mapas <span class="math notranslate nohighlight">\(f: A \rightarrow B\)</span> e <span class="math notranslate nohighlight">\(g: B \rightarrow C\)</span>.</p>
+<p>(a) Prove que se <span class="math notranslate nohighlight">\(g \circ f\)</span> é sobrejetiva, então <span class="math notranslate nohighlight">\(g\)</span> é sobrejetiva.</p>
+<p>(b) Prove que se <span class="math notranslate nohighlight">\(g \circ f\)</span> é injetiva, então <span class="math notranslate nohighlight">\(f\)</span> é injetiva.</p>
+<br/>
+<p>8 - Sejam <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> e <span class="math notranslate nohighlight">\(C\)</span> conjuntos e o mapa <span class="math notranslate nohighlight">\(f: B \rightarrow C\)</span>.</p>
+<p>(a) Sejam os mapas <span class="math notranslate nohighlight">\(g: A \rightarrow B\)</span> e <span class="math notranslate nohighlight">\(h: A \rightarrow B\)</span>. Prove que se <span class="math notranslate nohighlight">\(f\)</span> é injetiva e <span class="math notranslate nohighlight">\(f \circ g = f \circ h\)</span>, então <span class="math notranslate nohighlight">\(g = h\)</span>.</p>
+<p>(b) Suponha que <span class="math notranslate nohighlight">\(A\)</span> possui pelo menos um elemento (<span class="math notranslate nohighlight">\(A \neq \emptyset\)</span>) e, para todos os mapas <span class="math notranslate nohighlight">\(g\)</span> e <span class="math notranslate nohighlight">\(h\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span>, se <span class="math notranslate nohighlight">\(f \circ g = f \circ h\)</span>, então <span class="math notranslate nohighlight">\(g = h\)</span>. Mostre que <span class="math notranslate nohighlight">\(f\)</span> é injetiva.</p>
+<br/>
+<p>9 - Sejam <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> e <span class="math notranslate nohighlight">\(C\)</span> conjuntos e o mapa <span class="math notranslate nohighlight">\(f: A \rightarrow B\)</span>.</p>
+<p>(a) Sejam os mapas <span class="math notranslate nohighlight">\(g: B \rightarrow C\)</span> e <span class="math notranslate nohighlight">\(h: B \rightarrow C\)</span>. Prove que se <span class="math notranslate nohighlight">\(f\)</span> é sobrejetiva e <span class="math notranslate nohighlight">\(g \circ f = h \circ f\)</span>, então <span class="math notranslate nohighlight">\(g = h\)</span>.</p>
+<p>(b) Suponha que <span class="math notranslate nohighlight">\(C\)</span> possui pelo menos dois elementos e, para todos os mapas <span class="math notranslate nohighlight">\(g\)</span> e <span class="math notranslate nohighlight">\(h\)</span> de <span class="math notranslate nohighlight">\(B\)</span> para <span class="math notranslate nohighlight">\(C\)</span>, se <span class="math notranslate nohighlight">\(g \circ f = h \circ f\)</span>, então <span class="math notranslate nohighlight">\(g = h\)</span>. Mostre que <span class="math notranslate nohighlight">\(f\)</span> é sobrejetiva.</p>
+<br/>
+<p><strong>Exercícios 10 e 11 são uma “generalização” para “hom functions” dos exercícios 8 e 9, respectivamente.</strong></p>
+<p>Seja <span class="math notranslate nohighlight">\(Hom(S,T)\)</span> o conjunto de todas as funções com domínio <span class="math notranslate nohighlight">\(S\)</span> e codomínio <span class="math notranslate nohighlight">\(T\)</span>.</p>
+<p>10 - Sejam <span class="math notranslate nohighlight">\(S\)</span>, <span class="math notranslate nohighlight">\(T\)</span> e <span class="math notranslate nohighlight">\(V\)</span> conjuntos e o mapa <span class="math notranslate nohighlight">\(f: T \rightarrow V\)</span>. Defina o mapa:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Hom(S,f): Hom(S,T) \rightarrow Hom(S,V) \ \ \text{por} \\ \ \\ 
+Hom(S,f)(g) = f \circ g\end{split}\]</div>
+<p>Mostre que se <span class="math notranslate nohighlight">\(S\)</span> possui pelo menos um elemento, então <span class="math notranslate nohighlight">\(f\)</span> é injetiva se e somente se <span class="math notranslate nohighlight">\(Hom(S,f)\)</span> é injetiva.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Solução</strong>:<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Ver Category Theory for Computing Science (Barr e Wells), exemplo após a definição <strong>1.2.13</strong></p>
+</div>
+</details><br/>
+<p>11 - Sejam <span class="math notranslate nohighlight">\(W\)</span>, <span class="math notranslate nohighlight">\(S\)</span> e <span class="math notranslate nohighlight">\(T\)</span> conjuntos e o mapa <span class="math notranslate nohighlight">\(h: W \rightarrow S\)</span>. Defina o mapa:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Hom(h,T): Hom(S,T) \rightarrow Hom(W,T) \ \ \text{por} \\ \ \\ 
+Hom(h,T)(g) = g \circ h\end{split}\]</div>
+<p>Mostre que se <span class="math notranslate nohighlight">\(T\)</span> possui pelo menos dois elementos, então <span class="math notranslate nohighlight">\(h\)</span> é sobrejetiva se e somente se <span class="math notranslate nohighlight">\(Hom(h,T)\)</span> é injetiva.</p>
 </div>
 </div>
 

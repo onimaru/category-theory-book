@@ -8,9 +8,8 @@
 
 **Conjunto de partes**: o conjunto de todos os possíveis subconjuntos de um determinado conjunto $A$ é denominado conjunto das partes de $A$. Usamos a notação $\mathcal{P}(A)$ para denotar o subconjunto das partes de $A$.
 
-**Exemplos**: ...
-
 **Função**: sejam $A$ e $B$ dois conjuntos quaisquer, definimos uma função $f: A \rightarrow B$ como um mapeamento de todo elemento $a$ do conjunto $A$ para um elemento do conjunto $B$, o qual chamamos $f(a)$. Chamamos $A$ de **domínio** da função e $B$ de **codomínio**. Chamamos de **imagem** da função $f$ o subconjunto do codomínio $B$ cujos elementos são associados aos elementos do domínio $A$. Formalmente, temos: 
+
 $$Im(f) = \{b \in B \ \vert \ \exists \ a \in A \text{ tal que } f(a) = b \}$$
 
 $g \circ f: T \rightarrow \mathbb{R}^n \rightarrow \{0,1\}$
