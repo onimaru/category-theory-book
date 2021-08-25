@@ -43,7 +43,7 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
@@ -95,6 +95,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="category-of-sets.html">
    Categoria dos Conjuntos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercises.html">
+   Exercícios
   </a>
  </li>
  <li class="toctree-l1">
@@ -159,11 +164,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/onimaru/category-theory-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/onimaru/category-theory-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -197,23 +202,29 @@
 <p><strong>Definição</strong>: uma categoria é composta de três coisas:</p>
 <ol class="simple">
 <li><p>uma classe <span class="math notranslate nohighlight">\(\mathcal{O}\)</span>, cujos elementos são chamados de objetos;</p></li>
-<li><p>um conjunto <span class="math notranslate nohighlight">\(Mor(A,B)\)</span>, cujos elementos são chamados de morfismos de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span>, onde <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(B\)</span> são dois objetos (ou seja, atribui para cada elemento de <span class="math notranslate nohighlight">\(A\)</span> algum elemento de <span class="math notranslate nohighlight">\(B\)</span>);</p></li>
-<li><p>uma regras que atribui, dados quaisquer objetos <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> e <span class="math notranslate nohighlight">\(C\)</span>, morfismos, <span class="math notranslate nohighlight">\(\phi\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span> e <span class="math notranslate nohighlight">\(\psi\)</span> de <span class="math notranslate nohighlight">\(B\)</span> para <span class="math notranslate nohighlight">\(C\)</span>, um morfismo, escrito <span class="math notranslate nohighlight">\(\psi \circ \phi\)</span> ou <span class="math notranslate nohighlight">\(\psi \phi\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(C\)</span>, chamado de composição de <span class="math notranslate nohighlight">\(\phi\)</span> com <span class="math notranslate nohighlight">\(\psi\)</span> sujeitos as seguintes condições:</p></li>
+<li><p>um conjunto <span class="math notranslate nohighlight">\(Mor(A,B)\)</span>, cujos elementos são chamados de morfismos de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span>, onde <span class="math notranslate nohighlight">\(A \in \mathcal{O}\)</span> e <span class="math notranslate nohighlight">\(B \in \mathcal{O}\)</span> são dois objetos (ou seja, atribui para cada elemento de <span class="math notranslate nohighlight">\(A\)</span> algum elemento de <span class="math notranslate nohighlight">\(B\)</span>);</p></li>
+<li><p>uma regra que atribui, dados quaisquer objetos <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> e <span class="math notranslate nohighlight">\(C\)</span>, morfismos, <span class="math notranslate nohighlight">\(\phi\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span> e <span class="math notranslate nohighlight">\(\psi\)</span> de <span class="math notranslate nohighlight">\(B\)</span> para <span class="math notranslate nohighlight">\(C\)</span>, um morfismo, escrito <span class="math notranslate nohighlight">\(\psi \circ \phi\)</span> ou <span class="math notranslate nohighlight">\(\psi \phi\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(C\)</span>, chamado de composição de <span class="math notranslate nohighlight">\(\phi\)</span> com <span class="math notranslate nohighlight">\(\psi\)</span> sujeitos as seguintes condições:</p></li>
 </ol>
 <ul class="simple">
 <li><p>Associatividade: dados os objetos <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span> e <span class="math notranslate nohighlight">\(D\)</span>, os morfismos <span class="math notranslate nohighlight">\(\phi: A \rightarrow B\)</span>, <span class="math notranslate nohighlight">\(\psi: B \rightarrow C\)</span> e <span class="math notranslate nohighlight">\(\lambda: C \rightarrow D\)</span>, então <span class="math notranslate nohighlight">\(\left( \lambda \circ \psi \right) \circ \phi = \lambda \circ \left( \psi \circ \phi \right)\)</span>;</p></li>
-<li><p>Existência da identidade: para cada objeto <span class="math notranslate nohighlight">\(A\)</span> existe um morfismo <span class="math notranslate nohighlight">\(i_{A}\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(A\)</span> (chamado de morfismo de identidade sobre <span class="math notranslate nohighlight">\(A\)</span>) com a propriedadeL se <span class="math notranslate nohighlight">\(\phi: A \rightarrow B \Rightarrow \phi \circ i_{A} = \phi\)</span>; se <span class="math notranslate nohighlight">\(\mu : C \rightarrow A \Rightarrow i_{A} \circ \mu = \mu\)</span>.</p></li>
+<li><p>Existência da identidade: para cada objeto <span class="math notranslate nohighlight">\(A\)</span> existe um morfismo <span class="math notranslate nohighlight">\(id_{A}\)</span> de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(A\)</span> (chamado de morfismo de identidade sobre <span class="math notranslate nohighlight">\(A\)</span>) com a propriedade se <span class="math notranslate nohighlight">\(\phi: A \rightarrow B \Rightarrow \phi \circ id_{A} = \phi\)</span>; se <span class="math notranslate nohighlight">\(\mu : C \rightarrow A \Rightarrow id_{A} \circ \mu = \mu\)</span>.</p></li>
 </ul>
 <p>Seja <span class="math notranslate nohighlight">\(\phi\)</span> um morfismo de <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span>:</p>
 <p><strong>Monomorfismo</strong>: <span class="math notranslate nohighlight">\(\phi\)</span> é um monomorfismo se: dado qualquer objeto <span class="math notranslate nohighlight">\(X\)</span> e quaisquer dois morfismos <span class="math notranslate nohighlight">\(\alpha\)</span> e <span class="math notranslate nohighlight">\(\alpha'\)</span>, de <span class="math notranslate nohighlight">\(X\)</span> para <span class="math notranslate nohighlight">\(A\)</span> tal que <span class="math notranslate nohighlight">\(\phi \circ \alpha = \phi \circ \alpha'\)</span>, segue que <span class="math notranslate nohighlight">\(\alpha = \alpha'\)</span>.</p>
 <p><strong>Epimorfismo</strong>: …</p>
-<p>Baseado no livro <span id="id1">[]</span>.</p>
+<p>Baseado no livro <span id="id1">[<a class="reference internal" href="#id3">Spi14</a>]</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Fazer uma introdução?</p>
 </div>
 <p>E adicionar um índice?</p>
 <p>…</p>
+<p id="id2"><dl class="citation">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">Spi14</a></span></dt>
+<dd><p>David I Spivak. <em>Category theory for the sciences</em>. MIT Press, 2014.</p>
+</dd>
+</dl>
+</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>

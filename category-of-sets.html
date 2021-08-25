@@ -43,7 +43,7 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
@@ -54,7 +54,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lista de símbolos" href="symbol-index.html" />
+    <link rel="next" title="Exercícios" href="exercises.html" />
     <link rel="prev" title="Um estudo sobre Teoria das Categorias" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -96,6 +96,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Categoria dos Conjuntos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercises.html">
+   Exercícios
   </a>
  </li>
  <li class="toctree-l1">
@@ -160,11 +165,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/onimaru/category-theory-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcategory-of-sets.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/onimaru/category-theory-book/issues/new?title=Issue%20on%20page%20%2Fcategory-of-sets.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -195,11 +200,14 @@
                 
   <div class="section" id="categoria-dos-conjuntos">
 <h1>Categoria dos Conjuntos<a class="headerlink" href="#categoria-dos-conjuntos" title="Permalink to this headline">¶</a></h1>
-<p><strong>Conjunto</strong>: …</p>
-<p><strong>Subconjunto</strong>: …</p>
-<p><strong>Conjunto de partes</strong>: …</p>
+<p><strong>Conjunto</strong>: uma coleção qualquer de elementos, sendo que para quaisquer dois elementos <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x'\)</span> pertencentes a um conjunto <span class="math notranslate nohighlight">\(X\)</span>, devemos ser capazes de distinguir se são iguais ou diferentes. Para denotar que um elemento pertence a um conjunto, usamos <span class="math notranslate nohighlight">\(x \in X\)</span>. Note que um subconjunto não precisa ser necessariamente finito.</p>
+<p><strong>Subconjunto</strong>: dizemos que um conjunto <span class="math notranslate nohighlight">\(A\)</span> é um subconjunto de outro conjunto <span class="math notranslate nohighlight">\(B\)</span>, se para todo <span class="math notranslate nohighlight">\(a \in A\)</span>, temos que <span class="math notranslate nohighlight">\(a \in B\)</span>. Para denotar que <span class="math notranslate nohighlight">\(A\)</span> é subconjunto de <span class="math notranslate nohighlight">\(B\)</span>, usamos <span class="math notranslate nohighlight">\(A \subseteq B\)</span>. Note que todo conjunto é subconjunto dele mesmo: <span class="math notranslate nohighlight">\(A \subseteq A\)</span>.</p>
+<p><strong>Conjunto Vazio</strong>: definimos o conjunto <span class="math notranslate nohighlight">\(\{\ \ \}\)</span> com nenhum elemento como conjunto vazio. Também usamos a notação <span class="math notranslate nohighlight">\(\emptyset\)</span> para representar o conjunto vazio. O conjunto vazio é subconjunto de qualquer conjunto <span class="math notranslate nohighlight">\(\emptyset \subseteq A\)</span>.</p>
+<p><strong>Conjunto de partes</strong>: o conjunto de todos os possíveis subconjuntos de um determinado conjunto <span class="math notranslate nohighlight">\(A\)</span> é denominado conjunto das partes de <span class="math notranslate nohighlight">\(A\)</span>. Usamos a notação <span class="math notranslate nohighlight">\(\mathcal{P}(A)\)</span> para denotar o subconjunto das partes de <span class="math notranslate nohighlight">\(A\)</span>.</p>
 <p><strong>Exemplos</strong>: …</p>
-<p><strong>Função</strong>: …</p>
+<p><strong>Função</strong>: sejam <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(B\)</span> dois conjuntos quaisquer, definimos uma função <span class="math notranslate nohighlight">\(f: A \rightarrow B\)</span> como um mapeamento de todo elemento <span class="math notranslate nohighlight">\(a\)</span> do conjunto <span class="math notranslate nohighlight">\(A\)</span> para um elemento do conjunto <span class="math notranslate nohighlight">\(B\)</span>, o qual chamamos <span class="math notranslate nohighlight">\(f(a)\)</span>. Chamamos <span class="math notranslate nohighlight">\(A\)</span> de <strong>domínio</strong> da função e <span class="math notranslate nohighlight">\(B\)</span> de <strong>codomínio</strong>. Chamamos de <strong>imagem</strong> da função <span class="math notranslate nohighlight">\(f\)</span> o subconjunto do codomínio <span class="math notranslate nohighlight">\(B\)</span> cujos elementos são associados aos elementos do domínio <span class="math notranslate nohighlight">\(A\)</span>. Formalmente, temos:
+$<span class="math notranslate nohighlight">\(Im(f) = \{b \in B \ \vert \ \exists \ a \in A \text{ tal que } f(a) = b \}\)</span>$</p>
+<p><span class="math notranslate nohighlight">\(g \circ f: T \rightarrow \mathbb{R}^n \rightarrow \{0,1\}\)</span></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -228,7 +236,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Um estudo sobre Teoria das Categorias</a>
-    <a class='right-next' id="next-link" href="symbol-index.html" title="next page">Lista de símbolos</a>
+    <a class='right-next' id="next-link" href="exercises.html" title="next page">Exercícios</a>
 
         </div>
         
